@@ -48,6 +48,7 @@ nav ul li a {
   font-family: "Dancing Script";
   color: white;
 }
+
 .sections {
   display: flex;
   flex-flow: column wrap;
@@ -56,18 +57,65 @@ nav ul li a {
 }
 
 .section1 {
-  background: white;
+  background: #c5c75f;
+  display: block;
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
 }
 
 .photo1, .photo2, .photo3 {
-  background: red;
   width: 30%;
-  margin: 0 auto;
+  margin: 20px auto auto auto;
 }
 
 .photo1 img, .photo2 img, .photo3 img {
+  width: 100%;
+}
+
+.section2 {
+  background: #c5c75f;
+  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.photo4, .photo5, .photo6 {
+  width: 30%;
+  margin: auto auto 20px auto;
+}
+
+.photo4 img, .photo5 img, .photo6 img {
+  width: 100%;
+}
+
+
+footer {
+  background: #c6d5c5;
+  margin: 0 auto;
+  padding: 0s;
   width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: "Dancing Script";
+  border-radius: 0 0 10px 10px;
+}
+
+footer .ft1, footer .ft2, footer .ft3, footer .ft4 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+}
+
+
+footer .ft1 h2, footer .ft2 h2, footer .ft3 h2, footer .ft4 h2{
+     margin: 10px auto;
+}
+
+
+footer .ft1 p, footer .ft2 p, footer .ft3 p, footer .ft4 p {
+  margin: auto;
 }
