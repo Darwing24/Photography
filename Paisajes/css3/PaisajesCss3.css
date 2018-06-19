@@ -1,11 +1,13 @@
 
 @font-face {
    font-family: "Dancing Script";
+   -moz-font-family: "Dancing Script";
+   -webkit-font-family: "Dancing Script";
     src: url(../font/DancingScript-regular.ttf);
 }
 
 body {
-  background: black;
+  background: #02010a;
 }
 
 header {
@@ -15,7 +17,29 @@ header {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  text-shadow: 2px 2px 0 #02010a;
+  animation: rebound 1.5s;
 }
+
+
+@-webkit-keyframes rebound {
+
+      0% {
+       margin-top: 150%;
+      }
+
+      60% {
+       margin-top: -5%;
+      }
+
+      100% {
+      margin-top: 0%;
+      }
+
+}
+
 
 header h1 {
    position: relative;
@@ -25,6 +49,8 @@ header h1 {
    font-family: "Dancing Script";
    color: white;
    width: 50%;
+   text-shadow: 2px 2px 0 #02010a;
+
 }
 
 nav {
@@ -66,11 +92,20 @@ nav ul li a {
 
 .photo1, .photo2, .photo3 {
   width: 30%;
-  margin: 20px auto auto auto;
+  margin: 20px auto 10px auto;
 }
+
 
 .photo1 img, .photo2 img, .photo3 img {
   width: 100%;
+}
+
+.photo1 img {
+ filter: blur(10px);
+}
+
+.photo3 img {
+  filter: sepia(90%);
 }
 
 .section2 {
@@ -83,11 +118,16 @@ nav ul li a {
 
 .photo4, .photo5, .photo6 {
   width: 30%;
-  margin: auto auto 20px auto;
+  margin: 10px auto 20px auto;
 }
 
 .photo4 img, .photo5 img, .photo6 img {
   width: 100%;
+}
+
+
+.photo2 img, .photo4 img, .photo6 img {
+  filter: grayscale(100%);
 }
 
 footer {

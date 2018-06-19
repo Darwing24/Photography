@@ -1,11 +1,13 @@
 
 @font-face {
   font-family: "Dancing Script";
+  -moz-font-family: "Dancing Script";
+  -webkit-font-family: "Dancing Script";
   src: url(../font/DancingScript-regular.ttf)
 }
 
 body {
-  background: black;
+  background: #02010a;
 }
 header {
   background: #5b7989;
@@ -14,6 +16,25 @@ header {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  animation: rebound 1.5s;
+}
+
+@-webkit-keyframes rebound {
+
+      0% {
+       margin-top: 150%;
+      }
+
+      60% {
+       margin-top: -5%;
+      }
+
+      100% {
+      margin-top: 0%;
+      }
+
 }
 
 header h1 {
@@ -24,6 +45,7 @@ header h1 {
    font-family: "Dancing Script";
    color: white;
    width: 50%;
+   text-shadow: 2px 2px 0 #02010a;
 }
 
 nav {
@@ -69,7 +91,9 @@ nav ul li a {
 .section1 .photo1 img {
   width: 80%;
   margin: 20px auto;
+  border: 1px;
 }
+
 
 
 .section2
@@ -93,7 +117,17 @@ nav ul li a {
 .section2 .photo2 img {
   width: 100%;
   margin: 20px auto 0 auto;
+  transition: transform 3s;
+  border: 2px;
+  box-shadow: 2px 2px 0 black;
 }
+
+
+.section2 .photo2 img:hover {
+  transform: rotateZ(10deg);
+  box-shadow: 2px 2px 0 #82c3a6;
+}
+
 
 .section2 .photo2 h2 {
   font-family: "Dancing Script";
@@ -110,7 +144,15 @@ nav ul li a {
 .section2 .photo3 img {
   width: 100%;
   margin: 20px auto 0 auto;
+  border: 2px;
+  box-shadow: 2px 2px 0 black;
+  transition: transform 1s;
+}
 
+
+.section2 .photo3 img:hover {
+  box-shadow: 2px 2px 0 #82c3a6;
+  transform: translate3d(20px, -5px, 0);
 }
 
 .section2 .photo3 h2 {
