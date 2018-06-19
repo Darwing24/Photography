@@ -1,0 +1,160 @@
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url(../font/DancingScript-regular.ttf)
+}
+
+body {
+  background: black;
+  text-align: center;
+}
+
+header {
+  background: #5b7989;
+  display: flex;
+  flex-flow: row nowrap;
+  vertical-align: middle;
+  border-radius: 10px 10px 0 0;
+  padding: auto;
+  width: 80%;
+  margin: auto;
+}
+
+
+header h1 {
+  float: left;
+  font-family: "Dancing Script";
+  display: inline-block;
+  width: 50%;
+  color: white;
+}
+
+
+nav {
+   float: right;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 40%;
+   margin: auto 0 auto auto;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    margin: auto;
+}
+
+nav ul li {
+  font-family: "Dancing Script";
+  list-style: none;
+  margin: auto;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.photos {
+  width: 80%;
+  margin: auto;
+}
+
+.section1
+ {
+  width: 100%;
+  background: #82c3a6;
+  text-align: center;
+}
+
+.section1 .photo1 {
+  text-align: center;
+  width: 100%;
+}
+
+
+.section1 .photo1 img {
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+.section2
+ {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  padding: auto;
+  background: #c5c75f;
+  border: 1px;
+}
+
+.section2 .photo2 {
+  width: 45%;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+
+.section2 .photo2 img {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.section2 .photo2 h2 {
+  font-family: "Dancing Script";
+  margin: 0 auto;
+}
+
+.section2 .photo3 {
+  width: 45%;
+  display: inline-block;
+  margin: auto;
+}
+
+
+.section2 .photo3 img {
+  width: 100%;
+  margin: 20px auto;
+
+}
+
+.section2 .photo3 h2 {
+  font-family: "Dancing Script";
+  margin: 0 auto;
+}
+
+footer {
+  background: #c6d5c5;
+  margin: 0 auto;
+  padding: 0s;
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: "Dancing Script";
+  border-radius: 0 0 10px 10px;
+}
+
+footer .ft1, footer .ft2, footer .ft3, footer .ft4 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  margin: auto;
+}
+
+
+footer .ft1 h2, footer .ft2 h2, footer .ft3 h2, footer .ft4 h2{
+     margin: 10px auto;
+}
+
+
+footer .ft1 p, footer .ft2 p, footer .ft3 p, footer .ft4 p {
+  margin: auto;
+}

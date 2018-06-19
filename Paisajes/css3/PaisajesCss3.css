@@ -1,0 +1,73 @@
+
+@font-face {
+   font-family: "Dancing Script";
+    src: url(../font/DancingScript-regular.ttf);
+}
+
+body {
+  background: black;
+}
+
+header {
+  background: #5b7989;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+   position: relative;
+   float: left;
+   display: inline-block;
+   margin: auto auto auto 15px;
+   font-family: "Dancing Script";
+   color: white;
+   width: 50%;
+}
+
+nav {
+  display: inline-block;
+  width: auto;
+  margin: auto 15px auto auto;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Dancing Script";
+  color: white;
+}
+.sections {
+  display: flex;
+  flex-flow: column wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section1 {
+  background: white;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.photo1, .photo2, .photo3 {
+  background: red;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.photo1 img, .photo2 img, .photo3 img {
+  width: 80%;
+}
