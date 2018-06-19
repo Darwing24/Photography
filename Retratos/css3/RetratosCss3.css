@@ -90,6 +90,7 @@ nav ul li a {
   width: 100%;
 }
 
+
 footer {
   background: #c6d5c5;
   margin: 0 auto;
@@ -101,14 +102,17 @@ footer {
   border-radius: 0 0 10px 10px;
 }
 
+
+
 footer .ft1, footer .ft2, footer .ft3, footer .ft4 {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   width: 20%;
   margin: auto;
-  text-align: center;
 }
+
+
 
 footer .ft1 h2, footer .ft2 h2, footer .ft3 h2, footer .ft4 h2{
      margin: 10px auto;

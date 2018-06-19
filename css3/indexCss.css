@@ -6,59 +6,46 @@
 
 body {
   background: black;
-  text-align: center;
 }
-
 header {
   background: #5b7989;
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-flow: row nowrap;
-  vertical-align: middle;
   border-radius: 10px 10px 0 0;
-  padding: auto;
-  width: 80%;
-  margin: auto;
 }
-
 
 header h1 {
-  float: left;
-  font-family: "Dancing Script";
-  display: inline-block;
-  width: 50%;
-  color: white;
+   position: relative;
+   float: left;
+   display: inline-block;
+   margin: auto auto auto 15px;
+   font-family: "Dancing Script";
+   color: white;
+   width: 50%;
 }
 
-
 nav {
-   float: right;
-   vertical-align: middle;
-   margin: 0 auto;
-   width: 40%;
-   margin: auto 0 auto auto;
+  display: inline-block;
+  width: auto;
+  margin: auto 15px auto auto;
 }
 
 nav ul {
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-    height: 100%;
-    margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 nav ul li {
-  font-family: "Dancing Script";
   list-style: none;
-  margin: auto;
+  margin: 0 10px;
 }
 
-ul li a {
+nav ul li a {
   text-decoration: none;
+  font-family: "Dancing Script";
   color: white;
-
 }
 
 .photos {
@@ -147,6 +134,7 @@ footer .ft1, footer .ft2, footer .ft3, footer .ft4 {
   vertical-align: middle;
   width: 20%;
   margin: auto;
+  text-align: center;
 }
 
 
