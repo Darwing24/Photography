@@ -92,7 +92,7 @@ nav ul li a {
 
 .section2 .photo2 img {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 }
 
 .section2 .photo2 h2 {
@@ -109,7 +109,7 @@ nav ul li a {
 
 .section2 .photo3 img {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 
 }
 
@@ -145,4 +145,96 @@ footer .ft1 h2, footer .ft2 h2, footer .ft3 h2, footer .ft4 h2{
 
 footer .ft1 p, footer .ft2 p, footer .ft3 p, footer .ft4 p {
   margin: auto;
+}
+
+
+
+@media (max-width: 900px) {
+
+  header {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+
+  header {
+   text-align: center;
+  }
+
+  header h1 {
+     display: block;
+     margin: auto;
+     width: 100%;
+  }
+
+  nav {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+
+  nav ul {
+  padding: 0;
+   }
+
+  nav ul li {
+    list-style: none;
+    margin: auto;
+  }
+  /*PART OF WEB BODY MAX-WIDTH 900PX*/
+
+  .section1, .section2
+  {
+   flex-flow: column wrap;
+ }
+
+  .section1 .photo1, .section2 .photo2, .section2 .photo3{
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  .section1 .photo1 img {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .section2 .photo2 img {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  .section2 .photo2 h2 {
+    font-family: "Dancing Script";
+    margin: 0 auto;
+  }
+
+
+
+  .section2 .photo3 img {
+    width: 100%;
+    margin: 20px auto 0 auto;
+
+  }
+
+  .section2 .photo3 h2 {
+    font-family: "Dancing Script";
+    margin: 0 auto;
+  }
+
+  /*FOOTER IN MAX-WIDTH 900PX*/
+  footer {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  footer .ft1, footer .ft2, footer .ft3, footer .ft4 {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+
+
 }

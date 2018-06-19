@@ -118,3 +118,67 @@ footer .ft1 h2, footer .ft2 h2, footer .ft3 h2, footer .ft4 h2{
 footer .ft1 p, footer .ft2 p, footer .ft3 p, footer .ft4 p {
   margin: auto;
 }
+
+
+
+@media (max-width: 900px) {
+
+  /*HEADER FOR MAX-WIDTH 900PX*/
+  header {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+
+  header {
+   text-align: center;
+  }
+
+  header h1 {
+     display: block;
+     margin: auto;
+     width: 100%;
+  }
+
+  nav {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+
+  nav ul {
+  padding: 0;
+   }
+
+  nav ul li {
+    list-style: none;
+    margin: auto;
+  }
+
+ /*PART OF WED BODY FOR MAX-WIDTH 900PX*/
+
+ .section1, .section2 {
+   flex-flow: column wrap;
+ }
+
+ .photo1, .photo2, .photo3, .photo4, .photo5, .photo6 {
+   width: 80%;
+   margin: 10px auto;
+ }
+
+
+  /*FOOTER IN MAX-WIDTH 900PX*/
+  footer {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  footer .ft1, footer .ft2, footer .ft3, footer .ft4 {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+
+}
